@@ -1,96 +1,86 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.10">
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
   <POU Name="MAIN" Id="{a20a5a29-b663-43a1-b002-dba610fd5b32}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
 	
 	{attribute 'pytmc' := '
-		pv: ADS_TST:SetiCycleRB
-		pv: ADS_TST:SetiCycle
-		io: o
-		pv: ADS_TST:GetiCycle
+		pv: ADS_TST:iCycle
+		io: io
+		pv: ADS_TST:ReadOnly:iCycle
 		io: i
 	'}
 	iCycle : INT;
 
 	{attribute 'pytmc' := '
-		pv: ADS_TST:SetdiCycleRB
-		pv: ADS_TST:SetdiCycle
+		pv: ADS_TST:diCycle
 		io: o
-		pv: ADS_TST:GetdiCycle
+		pv: ADS_TST:ReadOnly:diCycle
 		io: i
 	'}
 	diCycle : DINT;
 	
 	{attribute 'pytmc' := '
-		pv: ADS_TST:SetbStateRB
-		pv: ADS_TST:SetbState
+		pv: ADS_TST:bState
 		io: o
-		pv: ADS_TST:GetbState
+		pv: ADS_TST:ReadOnly:bState
 		io: i
 	'}
 	bState : BOOL;
 
 	{attribute 'pytmc' := '
-		pv: ADS_TST:SetlrAmpRB
-		pv: ADS_TST:SetlrAmp
+		pv: ADS_TST:lrAmp
 		io: o
-		pv: ADS_TST:GetlrAmp
+		pv: ADS_TST:ReadOnly:lrAmp
 		io: i
 	'}
 	lrAmplitude :	LREAL;
 
 	{attribute 'pytmc' := '
-		pv: ADS_TST:SetrAmpRB
-		pv: ADS_TST:SetrAmp
+		pv: ADS_TST:rAmp
 		io: o
-		pv: ADS_TST:GetrAmp
+		pv: ADS_TST:ReadOnly:rAmp
 		io: i
 	'}
 	rAmplitude :	REAL;
 
 	{attribute 'pytmc' := '
-		pv: ADS_TST:SetlrArrayRB
-		pv: ADS_TST:SetlrArray
+		pv: ADS_TST:lrArray
 		io: o
-		pv: ADS_TST:GetlrArray
+		pv: ADS_TST:ReadOnly:lrArray
 		io: i
 	'}
 	lrArray : ARRAY [1..5] OF LREAL;
 
 	{attribute 'pytmc' := '
-		pv: ADS_TST:SetrArrayRB
-		pv: ADS_TST:SetrArray
+		pv: ADS_TST:rArray
 		io: o
-		pv: ADS_TST:GetrArray
+		pv: ADS_TST:ReadOnly:rArray
 		io: i
 	'}	
 	rArray : ARRAY [1..5] OF REAL;
 
 	{attribute 'pytmc' := '
-		pv: ADS_TST:SetiArrayRB
-		pv: ADS_TST:SetiArray
+		pv: ADS_TST:iArray
 		io: o
-		pv: ADS_TST:GetiArray
+		pv: ADS_TST:ReadOnly:iArray
 		io: i
 	'}
 	iArray : ARRAY [1..5] OF INT;
 
 	{attribute 'pytmc' := '
-		pv: ADS_TST:SetdiArrayRB
-		pv: ADS_TST:SetdiArray
+		pv: ADS_TST:diArray
 		io: o
-		pv: ADS_TST:GetrdiArray
+		pv: ADS_TST:ReadOnly:rdiArray
 		io: i
 	'}
 	diArray : ARRAY [1..5] OF DINT;
 	
 	
 	{attribute 'pytmc' := '
-		pv: ADS_TST:SetbArrayRB
-		pv: ADS_TST:SetbArray
+		pv: ADS_TST:bArray
 		io: o
-		pv: ADS_TST:GetbArray
+		pv: ADS_TST:ReadOnly:bArray
 		io: i
 	'}
 	bArray : ARRAY [1..5] OF BOOL;
@@ -101,10 +91,9 @@ VAR
 	dval : DINT;
 
 	{attribute 'pytmc' := '
-		pv: ADS_TST:SetStrRB
-		pv: ADS_TST:SetStr
+		pv: ADS_TST:Str
 		io: o
-		pv: ADS_TST:GetStr
+		pv: ADS_TST:ReadOnly:Str
 		io: i
 	'}
 	sTest	:	STRING(35);
@@ -112,28 +101,24 @@ VAR
 	
 	
 	{attribute 'pytmc' := '
-		pv: ADS_TST:SeteStatusRB
-		pv: ADS_TST:SeteStatus
+		pv: ADS_TST:eStatus
 		io: o
-		pv: ADS_TST:GeteStatus
+		pv: ADS_TST:ReadOnly:eStatus
 		io: i
 	'}	
 	eStatus	:	DUT_ENUM_TEST;
 
 	{attribute 'pytmc' := '
-		pv: ADS_TST:SetenumArrayRB
-		pv: ADS_TST:SetenumArray
+		pv: ADS_TST:enumArray
 		io: o
-		pv: ADS_TST:GetenumArray
+		pv: ADS_TST:ReadOnly:enumArray
 		io: i
 	'}	
 	enumArray	: ARRAY [1..5] of DUT_ENUM_TEST;
 
-
-
 	
 	{attribute 'pytmc' := '
-		pv: ADS_TST:SetStrRB
+		pv: ADS_TST:StrRB
 	'}
 	//structure_type : DUT_STRUCT_TEST;
 	
