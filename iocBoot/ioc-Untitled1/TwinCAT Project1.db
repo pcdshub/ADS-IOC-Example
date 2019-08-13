@@ -1,0 +1,282 @@
+record(longin, "ADS_TST:iCycle_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.iCycle?")
+  field(DTYP, "asynInt32")
+  field(SCAN, "I/O Intr")
+}
+
+record(longout, "ADS_TST:iCycle"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.iCycle=")
+}
+
+record(longin, "ADS_TST:ReadOnly:iCycle_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.iCycle?")
+  field(DTYP, "asynInt32")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "ADS_TST:bState_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(ZNAM, "Zero")
+  field(ONAM, "One")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.bState?")
+  field(DTYP, "asynInt32")
+  field(SCAN, "I/O Intr")
+}
+
+record(bo, "ADS_TST:bState"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(ZNAM, "Zero")
+  field(ONAM, "One")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.bState=")
+}
+
+record(bi, "ADS_TST:ReadOnly:bState_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(ZNAM, "Zero")
+  field(ONAM, "One")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.bState?")
+  field(DTYP, "asynInt32")
+  field(SCAN, "I/O Intr")
+}
+
+record(longin, "ADS_TST:diCycle_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.diCycle?")
+  field(DTYP, "asynInt32")
+  field(SCAN, "I/O Intr")
+}
+
+record(longout, "ADS_TST:diCycle"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.diCycle=")
+}
+
+record(longin, "ADS_TST:ReadOnly:diCycle_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.diCycle?")
+  field(DTYP, "asynInt32")
+  field(SCAN, "I/O Intr")
+}
+
+record(ai, "ADS_TST:lrAmp_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(PREC, "3")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.lrAmplitude?")
+  field(DTYP, "asynFloat64")
+  field(SCAN, "I/O Intr")
+}
+
+record(ao, "ADS_TST:lrAmp"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(PREC, "3")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.lrAmplitude=")
+}
+
+record(ai, "ADS_TST:ReadOnly:lrAmp_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(PREC, "3")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.lrAmplitude?")
+  field(DTYP, "asynFloat64")
+  field(SCAN, "I/O Intr")
+}
+
+record(ai, "ADS_TST:rAmp_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(PREC, "3")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.rAmplitude?")
+  field(DTYP, "asynFloat64")
+  field(SCAN, "I/O Intr")
+}
+
+record(ao, "ADS_TST:rAmp"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(PREC, "3")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.rAmplitude=")
+}
+
+record(ai, "ADS_TST:ReadOnly:rAmp_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(PREC, "3")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.rAmplitude?")
+  field(DTYP, "asynFloat64")
+  field(SCAN, "I/O Intr")
+}
+
+record(ai, "ADS_TST:lrArray_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(PREC, "3")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.lrArray?")
+  field(DTYP, "asynFloat64")
+  field(SCAN, "I/O Intr")
+}
+
+record(ao, "ADS_TST:lrArray"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(PREC, "3")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.lrArray=")
+}
+
+record(ai, "ADS_TST:ReadOnly:lrArray_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(PREC, "3")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.lrArray?")
+  field(DTYP, "asynFloat64")
+  field(SCAN, "I/O Intr")
+}
+
+record(ai, "ADS_TST:rArray_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(PREC, "3")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.rArray?")
+  field(DTYP, "asynFloat64")
+  field(SCAN, "I/O Intr")
+}
+
+record(ao, "ADS_TST:rArray"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(PREC, "3")
+  field(DTYP, "asynFloat64")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.rArray=")
+}
+
+record(ai, "ADS_TST:ReadOnly:rArray_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(PREC, "3")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.rArray?")
+  field(DTYP, "asynFloat64")
+  field(SCAN, "I/O Intr")
+}
+
+record(longin, "ADS_TST:iArray_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.iArray?")
+  field(DTYP, "asynInt32")
+  field(SCAN, "I/O Intr")
+}
+
+record(longout, "ADS_TST:iArray"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.iArray=")
+}
+
+record(longin, "ADS_TST:ReadOnly:iArray_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.iArray?")
+  field(DTYP, "asynInt32")
+  field(SCAN, "I/O Intr")
+}
+
+record(longin, "ADS_TST:diArray_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.diArray?")
+  field(DTYP, "asynInt32")
+  field(SCAN, "I/O Intr")
+}
+
+record(longout, "ADS_TST:diArray"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.diArray=")
+}
+
+record(longin, "ADS_TST:ReadOnly:rdiArray_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.diArray?")
+  field(DTYP, "asynInt32")
+  field(SCAN, "I/O Intr")
+}
+
+record(bi, "ADS_TST:bArray_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(ZNAM, "Zero")
+  field(ONAM, "One")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.bArray?")
+  field(DTYP, "asynInt32")
+  field(SCAN, "I/O Intr")
+}
+
+record(bo, "ADS_TST:bArray"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(ZNAM, "Zero")
+  field(ONAM, "One")
+  field(DTYP, "asynInt32")
+  field(OUT, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.bArray=")
+}
+
+record(bi, "ADS_TST:ReadOnly:bArray_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(ZNAM, "Zero")
+  field(ONAM, "One")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.bArray?")
+  field(DTYP, "asynInt32")
+  field(SCAN, "I/O Intr")
+}
+
+record(waveform, "ADS_TST:Str_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(FTVL, "CHAR")
+  field(NELM, "81")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.sTest?")
+  field(DTYP, "asynOctetRead")
+  field(SCAN, "I/O Intr")
+}
+
+record(waveform, "ADS_TST:Str"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(FTVL, "CHAR")
+  field(NELM, "81")
+  field(DTYP, "asynOctetWrite")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.sTest=")
+}
+
+record(waveform, "ADS_TST:ReadOnly:Str_RBV"){
+  field(PINI, "1")
+  field(TSE, "-2")
+  field(FTVL, "CHAR")
+  field(NELM, "81")
+  field(INP, "@asyn($(PORT),0,1)ADSPORT=851/MAIN.sTest?")
+  field(DTYP, "asynOctetRead")
+  field(SCAN, "I/O Intr")
+}
