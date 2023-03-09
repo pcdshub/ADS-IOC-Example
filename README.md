@@ -1,3 +1,5 @@
+# ** This repository has been archived; see https://github.com/pcdshub/ads-ioc/ **
+
 # ADS IOC example
 
 An example ADS-based IOC with a paired TwinCAT3 solution.
